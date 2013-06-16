@@ -121,6 +121,16 @@
         <image name="beyondvincent.jpg" width="800" height="530"/>
         <image name="niudun.jpg" width="404" height="442"/>
     </resources>
+    <classes>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startGravity:"/>
+                <relationship kind="action" name="stopGravity:"/>
+                <relationship kind="outlet" name="square1" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
