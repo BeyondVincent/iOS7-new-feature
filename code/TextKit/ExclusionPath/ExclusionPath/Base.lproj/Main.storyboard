@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.9" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.9"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="kJc-m7-PFE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="281"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <mutableString key="text">今天（北京时间2013年06月11日）凌晨，由库克引领的苹果发布了iOS7，本次新系统的发布可以说是iOS自发布以来最大的一次变革，iOS的设计由之前的拟物变为了现在的扁平化——这也标志着苹果真正的进入了库克时代。
+目前苹果只发布了iOS7的beta版本，虽然据闻有不少bug，不过无论你对iOS7的设计是吐槽也好，惊艳也罢，基调已经定下来了，苹果的这次革新，是否能够获得用户的青睐，就让用户来检验吧。
+按照往年的惯例，iOS7的release版本预计会在今年9月份发布，在这差不多3个月的时间里面，苹果的主要任务估计就是完善并加强iOS7的稳定性了。
+为了观察开发者对WWDC2013的关注情况，在WWDC开幕的时候，笔者分别在新浪微博和Twitter上检索WWDC关键字，发现相关新讯息更新的速度非常快，从这一个角度来说，无论是国内的开发者，还是国外的开发者，对苹果非常的期待。
+虽说iOS和相关设备的每次升级更新，都会引来大批的code monkey吐槽（譬如去年iPhone5的发布），不过吐槽归吐槽，想想社会是进步的，没有大胆的尝试，又哪来进步呢——无论成功与否，苹果这种引领业界创新的精神才应该是值得大家欣赏与效仿的！</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CeF-K9-J9j">
+                                <rect key="frame" x="85" y="309" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="imageView" destination="CeF-K9-J9j" id="OWb-WY-ZWc"/>
+                        <outlet property="textView" destination="kJc-m7-PFE" id="ZYY-Lh-QqH"/>
+                        <outlet property="view" destination="kh9-bI-dsS" id="7to-y9-Hh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="448" height="447"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
